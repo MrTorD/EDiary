@@ -37,6 +37,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Применение миграций к бд
+using var serviceScope = app.Services.CreateScope();
+var context = serviceScope.ServiceProvider.GetRequiredService<AppDbContext>();
+context.Database.Migrate();
+
 app.UseAuthorization();
 
 app.MapControllers();

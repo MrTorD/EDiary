@@ -1,8 +1,5 @@
-/Infrastructure/bin/
-/Infrastructure/obj/
-/Infrastructure.Migrations/bin/
-/Infrastructure.Migrations/obj/
-/EDiary/bin/
-/EDiary/obj/
-/Domain/bin/
-/Domain/obj/
+.idea
+obj
+bin
+EDiary.sln.DotSettings.user
+/data

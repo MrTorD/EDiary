@@ -11,7 +11,7 @@ namespace EDiary.Controllers;
 [Route("teacher")]
 public class TeacherController(TeacherService service) : Controller
 {
-    [HttpGet("id::guid")]
+    [HttpGet("{id:guid}")]
     public IActionResult GetTeacher([FromRoute] Guid id)
     {
         try
